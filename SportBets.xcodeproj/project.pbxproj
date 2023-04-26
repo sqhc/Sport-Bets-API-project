@@ -6,16 +6,6 @@
 	objectVersion = 55;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		06B785CB29F99E7B00EFA46F /* SportBetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B785CA29F99E7B00EFA46F /* SportBetsApp.swift */; };
-		06B785CD29F99E7B00EFA46F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B785CC29F99E7B00EFA46F /* ContentView.swift */; };
-		06B785CF29F99E8C00EFA46F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B785CE29F99E8C00EFA46F /* Assets.xcassets */; };
-		06B785D229F99E8C00EFA46F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B785D129F99E8C00EFA46F /* Preview Assets.xcassets */; };
-		06B785DC29F99E8D00EFA46F /* SportBetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B785DB29F99E8D00EFA46F /* SportBetsTests.swift */; };
-		06B785E629F99E8D00EFA46F /* SportBetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B785E529F99E8D00EFA46F /* SportBetsUITests.swift */; };
-		06B785E829F99E8D00EFA46F /* SportBetsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B785E729F99E8D00EFA46F /* SportBetsUITestsLaunchTests.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		06B785D829F99E8D00EFA46F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -35,15 +25,8 @@
 
 /* Begin PBXFileReference section */
 		06B785C729F99E7B00EFA46F /* SportBets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportBets.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		06B785CA29F99E7B00EFA46F /* SportBetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportBetsApp.swift; sourceTree = "<group>"; };
-		06B785CC29F99E7B00EFA46F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		06B785CE29F99E8C00EFA46F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		06B785D129F99E8C00EFA46F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		06B785D729F99E8D00EFA46F /* SportBetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportBetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		06B785DB29F99E8D00EFA46F /* SportBetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportBetsTests.swift; sourceTree = "<group>"; };
 		06B785E129F99E8D00EFA46F /* SportBetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportBetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		06B785E529F99E8D00EFA46F /* SportBetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportBetsUITests.swift; sourceTree = "<group>"; };
-		06B785E729F99E8D00EFA46F /* SportBetsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportBetsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +57,6 @@
 		06B785BE29F99E7B00EFA46F = {
 			isa = PBXGroup;
 			children = (
-				06B785C929F99E7B00EFA46F /* SportBets */,
-				06B785DA29F99E8D00EFA46F /* SportBetsTests */,
-				06B785E429F99E8D00EFA46F /* SportBetsUITests */,
 				06B785C829F99E7B00EFA46F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,42 +69,6 @@
 				06B785E129F99E8D00EFA46F /* SportBetsUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		06B785C929F99E7B00EFA46F /* SportBets */ = {
-			isa = PBXGroup;
-			children = (
-				06B785CA29F99E7B00EFA46F /* SportBetsApp.swift */,
-				06B785CC29F99E7B00EFA46F /* ContentView.swift */,
-				06B785CE29F99E8C00EFA46F /* Assets.xcassets */,
-				06B785D029F99E8C00EFA46F /* Preview Content */,
-			);
-			path = SportBets;
-			sourceTree = "<group>";
-		};
-		06B785D029F99E8C00EFA46F /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				06B785D129F99E8C00EFA46F /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		06B785DA29F99E8D00EFA46F /* SportBetsTests */ = {
-			isa = PBXGroup;
-			children = (
-				06B785DB29F99E8D00EFA46F /* SportBetsTests.swift */,
-			);
-			path = SportBetsTests;
-			sourceTree = "<group>";
-		};
-		06B785E429F99E8D00EFA46F /* SportBetsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				06B785E529F99E8D00EFA46F /* SportBetsUITests.swift */,
-				06B785E729F99E8D00EFA46F /* SportBetsUITestsLaunchTests.swift */,
-			);
-			path = SportBetsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +175,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06B785D229F99E8C00EFA46F /* Preview Assets.xcassets in Resources */,
-				06B785CF29F99E8C00EFA46F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +199,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06B785CD29F99E7B00EFA46F /* ContentView.swift in Sources */,
-				06B785CB29F99E7B00EFA46F /* SportBetsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +206,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06B785DC29F99E8D00EFA46F /* SportBetsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +213,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06B785E629F99E8D00EFA46F /* SportBetsUITests.swift in Sources */,
-				06B785E829F99E8D00EFA46F /* SportBetsUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +409,6 @@
 		06B785EF29F99E8D00EFA46F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -492,7 +428,6 @@
 		06B785F029F99E8D00EFA46F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -512,7 +447,6 @@
 		06B785F229F99E8D00EFA46F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9FGVTTM39Q;
@@ -530,7 +464,6 @@
 		06B785F329F99E8D00EFA46F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9FGVTTM39Q;
