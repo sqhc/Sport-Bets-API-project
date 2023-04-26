@@ -14,6 +14,9 @@
 		06B785DC29F99E8D00EFA46F /* SportBetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B785DB29F99E8D00EFA46F /* SportBetsTests.swift */; };
 		06B785E629F99E8D00EFA46F /* SportBetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B785E529F99E8D00EFA46F /* SportBetsUITests.swift */; };
 		06B785E829F99E8D00EFA46F /* SportBetsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B785E729F99E8D00EFA46F /* SportBetsUITestsLaunchTests.swift */; };
+		06B785F829F9A99300EFA46F /* InplayDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B785F729F9A99300EFA46F /* InplayDataModel.swift */; };
+		06B785FA29F9B96D00EFA46F /* InplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B785F929F9B96D00EFA46F /* InplayView.swift */; };
+		06B785FC29F9B99B00EFA46F /* InplayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B785FB29F9B99B00EFA46F /* InplayViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		06B785E129F99E8D00EFA46F /* SportBetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportBetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B785E529F99E8D00EFA46F /* SportBetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportBetsUITests.swift; sourceTree = "<group>"; };
 		06B785E729F99E8D00EFA46F /* SportBetsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportBetsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06B785F729F9A99300EFA46F /* InplayDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InplayDataModel.swift; sourceTree = "<group>"; };
+		06B785F929F9B96D00EFA46F /* InplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InplayView.swift; sourceTree = "<group>"; };
+		06B785FB29F9B99B00EFA46F /* InplayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InplayViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				06B785CA29F99E7B00EFA46F /* SportBetsApp.swift */,
-				06B785CC29F99E7B00EFA46F /* ContentView.swift */,
 				06B785CE29F99E8C00EFA46F /* Assets.xcassets */,
+				06B785F429F9A7CD00EFA46F /* Model */,
+				06B785F529F9A93300EFA46F /* Views */,
+				06B785F629F9A94000EFA46F /* ViewModels */,
 				06B785D029F99E8C00EFA46F /* Preview Content */,
 			);
 			path = SportBets;
@@ -125,6 +133,31 @@
 				06B785E729F99E8D00EFA46F /* SportBetsUITestsLaunchTests.swift */,
 			);
 			path = SportBetsUITests;
+			sourceTree = "<group>";
+		};
+		06B785F429F9A7CD00EFA46F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06B785F729F9A99300EFA46F /* InplayDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06B785F529F9A93300EFA46F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06B785CC29F99E7B00EFA46F /* ContentView.swift */,
+				06B785F929F9B96D00EFA46F /* InplayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06B785F629F9A94000EFA46F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				06B785FB29F9B99B00EFA46F /* InplayViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06B785F829F9A99300EFA46F /* InplayDataModel.swift in Sources */,
 				06B785CD29F99E7B00EFA46F /* ContentView.swift in Sources */,
 				06B785CB29F99E7B00EFA46F /* SportBetsApp.swift in Sources */,
+				06B785FA29F9B96D00EFA46F /* InplayView.swift in Sources */,
+				06B785FC29F9B99B00EFA46F /* InplayViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
