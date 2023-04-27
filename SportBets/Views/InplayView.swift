@@ -45,7 +45,7 @@ struct playItem: View{
     var inPlay: RapidInPlay
     
     var body: some View{
-        HStack{
+        VStack{
             Text(inPlay.league?.name ?? "Unknown")
                 .frame(maxWidth: .infinity, alignment: .center)
                 .font(.title)
