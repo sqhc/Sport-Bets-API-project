@@ -18,6 +18,7 @@ struct RapidInPlay: Codable{
     let league: RapidLeague?
     let home: RapidHome?
     let away: RapidAway?
+    let ss: String?
     let r_id: String?
 }
 

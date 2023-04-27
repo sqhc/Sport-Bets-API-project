@@ -37,6 +37,7 @@ class InplayViewModel: ObservableObject{
             .dataTaskPublisher(for: request)
             .receive(on: DispatchQueue.main)
             .tryMap({result in
+                print(result.response)
                 guard let resoponse = result.response as? HTTPURLResponse,
                       resoponse.statusCode >= 200 && resoponse.statusCode <= 300 else{
                           throw LoadError.inValidStatus

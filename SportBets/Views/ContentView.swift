@@ -13,6 +13,10 @@ struct ContentView: View {
             VStack{
                 Text("Playing events")
                     .frame(maxWidth: .infinity, alignment: .center)
+                    .font(.title)
+                NavigationLink("Search races") {
+                    InplayView()
+                }
             }
             .navigationTitle("Sport Bets")
         }

@@ -11,12 +11,64 @@ struct InplayView: View {
     @ObservedObject var viewModel = InplayViewModel()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            if let inPlays = viewModel.inPlays?.results{
+                List{
+                    ForEach(inPlays, id: \.id) { inPlay in
+                        playItem(inPlay: inPlay)
+                    }
+                }
+            }
+            else{
+                ProgressView()
+            }
+        }
+        .onAppear(perform: viewModel.fetchInplays)
+        .alert(isPresented: $viewModel.hasError, error: viewModel.error) {
+            Button {
+                
+            } label: {
+                Text("Cancel")
+            }
+
+        }
     }
 }
 
 struct InplayView_Previews: PreviewProvider {
     static var previews: some View {
         InplayView()
+    }
+}
+
+struct playItem: View{
+    var inPlay: RapidInPlay
+    
+    var body: some View{
+        HStack{
+            Text(inPlay.league?.name ?? "Unknown")
+                .frame(maxWidth: .infinity, alignment: .center)
+                .font(.title)
+            Text(convertTime(time: inPlay.time!))
+            HStack{
+                Text("Home")
+                Spacer()
+                Text("Away")
+            }
+            HStack{
+                Text(inPlay.home?.name ?? "Unknown")
+                Spacer()
+                Text(inPlay.ss ?? "Unknown")
+                Spacer()
+                Text(inPlay.away?.name ?? "Unknown")
+            }
+        }
+    }
+    
+    func convertTime(time: String)->String{
+        let t = Int(time)!
+        let formatter = DateComponentsFormatter()
+        //formatter.allowedUnits = [.year, .month, .day, .hour, .minute]
+        return formatter.string(from: TimeInterval(t))!
     }
 }
