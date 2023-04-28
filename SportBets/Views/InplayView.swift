@@ -69,8 +69,10 @@ struct playItem: View{
     }
     
     func convertTime(time: String)->String{
-        let t = Int(time)!
-        let formatter = DateComponentsFormatter()
-        return formatter.string(from: TimeInterval(t))!
+        let t = Int64(time)!
+        let date = Date(timeIntervalSince1970: TimeInterval(t))
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH: mm"
+        return dateFormatter.string(from: date)
     }
 }
