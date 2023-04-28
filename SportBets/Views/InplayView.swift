@@ -62,13 +62,15 @@ struct playItem: View{
                 Spacer()
                 Text(inPlay.away?.name ?? "Unknown")
             }
+            NavigationLink("Results?") {
+                ResultsView(vm: ResultsViewModel(id: inPlay.id!))
+            }
         }
     }
     
     func convertTime(time: String)->String{
         let t = Int(time)!
         let formatter = DateComponentsFormatter()
-        //formatter.allowedUnits = [.year, .month, .day, .hour, .minute]
         return formatter.string(from: TimeInterval(t))!
     }
 }
