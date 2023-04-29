@@ -20,6 +20,9 @@
 		06B785FE29FAFF5500EFA46F /* MatchResultDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B785FD29FAFF5400EFA46F /* MatchResultDataModel.swift */; };
 		06B7860029FB351500EFA46F /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B785FF29FB351500EFA46F /* ResultsView.swift */; };
 		06B7860229FB353100EFA46F /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B7860129FB353100EFA46F /* ResultsViewModel.swift */; };
+		06B7860429FC5DB200EFA46F /* PreMatchOddsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B7860329FC5DB200EFA46F /* PreMatchOddsDataModel.swift */; };
+		06B7860629FC7BF000EFA46F /* PodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B7860529FC7BF000EFA46F /* PodView.swift */; };
+		06B7860829FC7C4F00EFA46F /* PodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B7860729FC7C4F00EFA46F /* PodViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		06B785FD29FAFF5400EFA46F /* MatchResultDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResultDataModel.swift; sourceTree = "<group>"; };
 		06B785FF29FB351500EFA46F /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		06B7860129FB353100EFA46F /* ResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
+		06B7860329FC5DB200EFA46F /* PreMatchOddsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreMatchOddsDataModel.swift; sourceTree = "<group>"; };
+		06B7860529FC7BF000EFA46F /* PodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodView.swift; sourceTree = "<group>"; };
+		06B7860729FC7C4F00EFA46F /* PodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,7 @@
 			children = (
 				06B785F729F9A99300EFA46F /* InplayDataModel.swift */,
 				06B785FD29FAFF5400EFA46F /* MatchResultDataModel.swift */,
+				06B7860329FC5DB200EFA46F /* PreMatchOddsDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,6 +163,7 @@
 				06B785CC29F99E7B00EFA46F /* ContentView.swift */,
 				06B785F929F9B96D00EFA46F /* InplayView.swift */,
 				06B785FF29FB351500EFA46F /* ResultsView.swift */,
+				06B7860529FC7BF000EFA46F /* PodView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +173,7 @@
 			children = (
 				06B785FB29F9B99B00EFA46F /* InplayViewModel.swift */,
 				06B7860129FB353100EFA46F /* ResultsViewModel.swift */,
+				06B7860729FC7C4F00EFA46F /* PodViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -300,10 +309,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				06B785FE29FAFF5500EFA46F /* MatchResultDataModel.swift in Sources */,
+				06B7860429FC5DB200EFA46F /* PreMatchOddsDataModel.swift in Sources */,
 				06B785F829F9A99300EFA46F /* InplayDataModel.swift in Sources */,
 				06B785CD29F99E7B00EFA46F /* ContentView.swift in Sources */,
+				06B7860829FC7C4F00EFA46F /* PodViewModel.swift in Sources */,
 				06B785CB29F99E7B00EFA46F /* SportBetsApp.swift in Sources */,
 				06B7860029FB351500EFA46F /* ResultsView.swift in Sources */,
+				06B7860629FC7BF000EFA46F /* PodView.swift in Sources */,
 				06B785FA29F9B96D00EFA46F /* InplayView.swift in Sources */,
 				06B785FC29F9B99B00EFA46F /* InplayViewModel.swift in Sources */,
 				06B7860229FB353100EFA46F /* ResultsViewModel.swift in Sources */,

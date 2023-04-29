@@ -43,6 +43,7 @@ struct InplayView_Previews: PreviewProvider {
 
 struct playItem: View{
     var inPlay: RapidInPlay
+    @State var showView = false
     
     var body: some View{
         VStack{
@@ -65,6 +66,19 @@ struct playItem: View{
             NavigationLink("Results?") {
                 ResultsView(vm: ResultsViewModel(id: inPlay.id!))
             }
+            Button {
+                showView.toggle()
+            } label: {
+                Text("Show Odds")
+                    .foregroundColor(.green)
+                    .font(.headline)
+                    .padding(20)
+                    .background(Color.white.cornerRadius(10))
+            }
+            .sheet(isPresented: $showView) {
+                PodView(viewModel: PodViewModel(fi: inPlay.r_id!))
+            }
+
         }
     }
     
