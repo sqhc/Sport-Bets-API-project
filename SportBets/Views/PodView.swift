@@ -36,6 +36,15 @@ struct PodView: View {
                 ProgressView()
             }
         }
+        .onAppear(perform: viewModel.fetchOdds)
+        .alert(isPresented: $viewModel.hasError, error: viewModel.error) {
+            Button {
+                
+            } label: {
+                Text("Cancel")
+            }
+
+        }
     }
 }
 
