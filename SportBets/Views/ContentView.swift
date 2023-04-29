@@ -26,6 +26,7 @@ struct ContentView: View {
                 Stepper(value: $sport_id, in: 1...20) {
                     Text("Sport ID")
                 }
+                Text("The id you choose: \(sport_id)")
                 NavigationLink("Upcoming matches") {
                     UpcomingView(viewModel: UpcomingViewModel(sport_id: "\(sport_id)"))
                 }
